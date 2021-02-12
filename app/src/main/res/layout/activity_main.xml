@@ -6,71 +6,89 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
-        android:orientation="vertical"
         android:layout_height="wrap_content">
+
         <TextView
             android:id="@+id/layout1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:background="#F60726"
-            android:text="Red"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#f20"
+            android:gravity="center"
+            android:text="1"
             android:textSize="30sp"></TextView>
 
         <TextView
             android:id="@+id/layout2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#2A9543"
+            android:gravity="center"
+            android:text="2"
             android:layout_below="@id/layout1"
-            android:layout_centerInParent="true"
-            android:background="#27E137"
-            android:text="Green"
+            android:layout_toRightOf="@id/layout1"
             android:textSize="30sp"></TextView>
 
         <TextView
             android:id="@+id/layout3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#B7AB31"
+            android:gravity="center"
+            android:text="3"
             android:layout_below="@id/layout2"
-            android:layout_centerInParent="true"
-            android:background="#3486EC"
-            android:text="Blue"
+            android:layout_toRightOf="@id/layout2"
             android:textSize="30sp"></TextView>
 
         <TextView
             android:id="@+id/layout4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#96166D"
+            android:gravity="center"
+            android:text="4"
             android:layout_below="@id/layout3"
-            android:layout_centerInParent="true"
-            android:background="#D2A730"
-            android:text="Orange"
+            android:layout_toRightOf="@id/layout3"
             android:textSize="30sp"></TextView>
 
 
         <TextView
             android:id="@+id/layout5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#8E635C"
+            android:gravity="center"
+            android:text="5"
             android:layout_below="@id/layout4"
-            android:layout_centerInParent="true"
-            android:background="#959493"
-            android:text="Grey"
+            android:layout_toLeftOf="@id/layout4"
             android:textSize="30sp"></TextView>
 
         <TextView
             android:id="@+id/layout6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#946A30"
+            android:gravity="center"
+            android:text="6"
             android:layout_below="@id/layout5"
-            android:layout_centerInParent="true"
-            android:background="#D922BA"
-            android:text="Pink"
+            android:layout_toLeftOf="@id/layout5"
             android:textSize="30sp"></TextView>
-    </LinearLayout>
+
+        <TextView
+            android:id="@+id/layout7"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:background="#47DAAE"
+            android:gravity="center"
+            android:text="7"
+            android:layout_below="@id/layout6"
+            android:layout_toLeftOf="@id/layout6"
+            android:textSize="30sp"></TextView>
+    </RelativeLayout>
+
+
 
 
 </RelativeLayout>
